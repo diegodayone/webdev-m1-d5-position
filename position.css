@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    /* twice the height of my viewport */
+    height: 200vh;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+#main img {
+    position:sticky;
+    right:0;
+    top:0;
+    width: 50px;
+}
+
+.nav {
+    background: #010101;
+    color: #00ff84;
+    position: fixed;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    /* Will stretch from left to right */
+    left: 0;
+    right: 0;
+}
+
+.space {
+    height: 100px;
+    background:green;   
+}
+
+#parent {
+    background: rgb(0, 255, 132);
+    background: radial-gradient(circle, rgba(0, 255, 132, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    width: 600px;
+    height: 600px;
+    position:relative;
+}
+
+#child {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.sticky-bar {
+    width: 400px;
+    height: 50px;
+    background: red;
+    color:yellow;
+    position:sticky;
+    top:0;
+    right:0;
+}

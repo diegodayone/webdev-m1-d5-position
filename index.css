@@ -1,0 +1,117 @@
+/* body {
+    background-color: aqua;
+} */
+
+div p {
+    color: orange;
+}
+
+.red-color > p {
+    color:red;
+}
+
+.dark {
+    background:#000;
+    color: #fff;
+}
+
+span + p {
+    color: purple;
+}
+
+p + p  {
+    color: darkolivegreen;
+}
+
+.sibling span ~ p {
+    color: lightpink;
+}
+
+.color-green {
+    color:green;
+}
+
+.color-red {
+    color: red;
+}
+
+h1:hover {
+    font-size: 50px;
+}
+
+img {
+    width:100px;
+}
+
+img:hover {
+    border-radius: 10px;
+    border: 3px solid green;
+    /* width: 200px; */
+}
+
+.box {
+    background-color:darkolivegreen;
+    width: 200px;
+    height: 200px;
+}
+
+.box::after{
+    content:"Test";
+    width:50px;
+    height: 50px;
+    background:red;
+}
+.box::before {
+    content:"I think I should come before!"
+}
+
+/* 
+    7 => seventh element
+    2n => even elements
+    2n +1 => odd element
+    3n => one every 3...
+    */
+    #main-list li:nth-child(1n) {
+        color:orange;
+    }
+/* #main-list li:nth-child(2n + 1) {
+    color:red;
+} */
+
+
+/* 
+    SPECIFICITY
+    (number, number, number)
+      #IDs   #class   #tags
+    
+    #whatever .class > h2
+    (1, 1, 1)
+
+    .class a .test 
+    (0, 2, 1)
+
+    .class a .test td 
+    (0, 2, 2)
+1) --^ 
+    0 in the first rule
+    0 in the second rule 
+
+2)------^
+    2 in the first rule
+    2 in the second one
+
+3)---------^
+    1 in the first rule
+    2 in the second one
+    
+.class a .test td  >>>> .class a .test 
+
+
+In the inspector you can see all the rules that affect
+a very element.
+IF one rule is taking over another, it means that rule
+has an higher Specificity
+IF the rule is not there, it means there is something
+wrong with the rule itself
+
+*/
